@@ -210,6 +210,19 @@ Cool, clean layouts for print and digital interfaces. From nitty, gritty code, t
 	$(".dropdown-button").click(function(){
 		$(".dropdown-content").toggle(300);
 	})
+	$(".dropdown-button").mouseenter(function(){
+  $(".dropdown-button").animate({
+    height: '+=20px',
+    width: '+=20px'
+  })
+})
+
+$(".dropdown-button").mouseleave(function(){
+  $(".btn01").animate({
+    height: '-=20px',
+    width: '-=20px'
+  })
+})
 </script>
 </body>
 </html>
