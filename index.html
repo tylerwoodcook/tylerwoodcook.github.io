@@ -1,7 +1,117 @@
 <!DOCTYPE html>
 <html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+
+/* the Body */
+body {
+	font-family: "Raleway", Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	}
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(00,00,00,0.8);
+}
+
+/* Navbar links */
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #828282;
+  color: #fff;
+  font-weight: 600;
+}
+
+.topnav-mobile {
+	display: none;
+}
+
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+  .topnav {
+    display: none;
+  }
+  
+  .topnav-mobile {
+  	display: inline-block;
+	position: relative;
+	width: 100%;
+	background-color: rgba(00,00,00,0.8);
+	color: white;
+	overflow: hidden;
+  }
+  
+  .topnav-mobile a {
+  	float: none;
+  	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  }
+  
+  .dropbtn {
+  	float: none;
+	width: 100%;
+  	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+	background-color: rgba(00,00,00,0.8);
+	border: none;
+	box-shadow: 0 4px 6px 0 rgba(00,00,00,0.3);
+  }
+
+}
+</style>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<!-- !PAGE CONTENT! -->
+<div style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="topnav">
+    <a href="#">Freebies</a>
+    <a href="#">Products</a>
+	<a href="#">Gallery</a>
+	<a href="#">About</a>
+  </header>
+  
+  <header class="topnav-mobile">
+  <div class="dropdown">
+  <button class="dropbtn">MENU</button>
+  <div class="dropdown-content">
+    <a href="#">Freebies</a>
+    <a href="#">Products</a>
+	<a href="#">Gallery</a>
+	<a href="#">About</a>
+  </div>
+</div>
+  </header>
+
+<!-- End Page Content -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+	$(".dropdown-content").hide();
+	$(".dropbtn").click(function(){
+		$(".dropdown-content").toggle(300);
+	})
+</script>
 </body>
 </html>
