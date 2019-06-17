@@ -3,15 +3,12 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 <style>
 
 /* the Body */
 body {
 	font-family: "Raleway", Arial, sans-serif;
-	width: 100%;
-	min-width: 320px;
 	padding: 0;
 	margin: 0;
 	}
@@ -33,10 +30,9 @@ p {
 .topnav {
   width: 100%;
   min-width: 320px;
-  background-color: rgba(00,00,00,0.25);
+  background-color: rgba(00,00,00,0.5);
   position: absolute;
   top: 0;
-  z-index: 999;
 }
 
 /* Navbar links */
@@ -50,12 +46,48 @@ p {
 }
 
 .topnav a:hover {
-  background-color: rgba(00,00,00,0.5);
+  background-color: rgba(00,00,00,0.75);
   color: #fff;
 }
 
 .topnav-mobile {
 	display: none;
+}
+
+/* HERO IMAGE AND TEXT */
+.hero-image {
+  background-image: url('skatepark-cropped-overlay.jpg');
+  height: 500px;
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
 }
 
 /* On screens that are 600px wide or less */
@@ -69,7 +101,7 @@ p {
 	text-align: left;
 	width: 25%;
 	min-width: 110px;
-	background-color: rgba(00,00,00,0.25);
+	background-color: rgba(00,00,00,0.5);
 	color: white;
 	position: absolute;
 	overflow: hidden;
@@ -79,7 +111,7 @@ p {
   }
   
   .dropdown-button {
-  text-align: left;
+  	text-align: left;
   	float: none;
   	display: block;
   	color: white;
@@ -96,13 +128,11 @@ p {
   	text-align: left;
   	padding: 14px 16px;
   	text-decoration: none;
-	border-top: 2px solid rgba(255, 255,255,0.15);
+	border-top: 2px solid rgba(255, 255,255,0.5);
   }
-
 }
 </style>
 <body>
-
 <!-- !PAGE CONTENT! -->
   <!-- Header -->
   <header class="topnav">
@@ -124,9 +154,17 @@ p {
   </div>
   </header>
   
-  <img src="images/waves-web.jpg" width="100%" height="auto">
+<!-- Hero Image and Text -->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size: 50px">I am John Doe</h1>
+    <p>And I'm a Photographer</p>
+    <button>Hire me</button>
+  </div>
+</div>
 
 <!-- More Page Content -->
+
 <div class="frame">
 <p>
 Cool, clean layouts for print and digital interfaces. From nitty, gritty code, to elegant design solutions. My purpose is to make your brand simpler to understand, more attractive, and easier to access. Years of professional experience working with clients make Linepup Design Co. a contender in the graphic design arena. Let's discuss your next great project. 
