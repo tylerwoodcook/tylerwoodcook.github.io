@@ -59,7 +59,7 @@ h1 {
   width: 100%;
   min-width: 320px;
   background-color: rgba(00,00,00,0.8);
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 999;
 }
@@ -117,6 +117,16 @@ h1 {
 .hero-text button:hover {
   background-color: rgba(255,255,255,0.8);
   color: black;
+}
+
+/* Footer */
+.footer {
+	width: 100%;
+  min-width: 320px;
+  background-color: rgba(00,00,00,0.8);
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
 }
 
 /* On screens that are 600px wide or less */
@@ -190,39 +200,45 @@ h1 {
   <div class="hero-text">
     <h1 style="text-shadow: 2px 2px 6px rgba(00,00,00,0.5);">Linepup Design Co.</h1>
     <h4>Designs that don't bite</h4>
-    <button>Get in Touch</button>
+    <button id="hero-button">Get in Touch</button>
   </div>
 </div>
 
 <!-- More Page Content -->
-
 <div class="frame">
 <h4>
 Cool, clean layouts for print and digital interfaces. From nitty, gritty code, to elegant design solutions. My purpose is to make your brand simpler to understand, more attractive, and easier to access. Years of professional experience working with clients make Linepup Design Co. a contender in the graphic design arena. Let's discuss your next great project. 
 </h4>
 <hr style="background-color: rgba(100,0,0,0.5); height: 4px; width: 40%; border: 0;">
 </div>
+
+<!-- Footer Starts Here -->
+<footer class="footer">
+<p>
+Content Here.
+</p>
+</footer>
 <!-- End Page Content -->
 <!-- Start Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script>
 	$(".dropdown-content").hide();
+	
 	$(".dropdown-button").click(function(){
 		$(".dropdown-content").toggle(300);
 	})
-	$(".dropdown-button").mouseenter(function(){
-  $(".dropdown-button").animate({
-    height: '+=20px',
-    width: '+=20px'
-  })
-})
+	
+	$("#hero-button").mouseenter(function(){
+  		$("#hero-button").animate({
+    		width: '+=20px'
+		}, 200)
+	})
 
-$(".dropdown-button").mouseleave(function(){
-  $(".btn01").animate({
-    height: '-=20px',
-    width: '-=20px'
-  })
-})
+	$("#hero-button").mouseleave(function(){
+  		$("#hero-button").animate({
+    		width: '-=20px'
+		}, 200)
+	})
 </script>
 </body>
 </html>
