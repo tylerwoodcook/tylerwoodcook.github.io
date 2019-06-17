@@ -10,14 +10,29 @@
 /* the Body */
 body {
 	font-family: "Raleway", Arial, sans-serif;
+	width: 100%;
+	min-width: 320px;
 	padding: 0;
 	margin: 0;
 	}
 
+ .frame {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 24px 40px;
+	box-sizing: border-box;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.8em;
+}
+
 /* The navbar container */
 .topnav {
-  overflow: hidden;
   width: 100%;
+  min-width: 320px;
   background-color: rgba(00,00,00,0.25);
   position: absolute;
   top: 0;
@@ -89,7 +104,6 @@ body {
 <body>
 
 <!-- !PAGE CONTENT! -->
-<div>
   <!-- Header -->
   <header class="topnav">
     <a href="#">Freebies</a>
@@ -110,12 +124,16 @@ body {
   </div>
   </header>
   
-  <img src="https://images.pexels.com/photos/1139541/pexels-photo-1139541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%" height="auto">
+  <img src="images/waves-web.jpg" width="100%" height="auto">
 
 <!-- More Page Content -->
-
-<!-- End Page Content -->
+<div class="frame">
+<p>
+Cool, clean layouts for print and digital interfaces. From nitty, gritty code, to elegant design solutions. My purpose is to make your brand simpler to understand, more attractive, and easier to access. Years of professional experience working with clients make Linepup Design Co. a contender in the graphic design arena. Let's discuss your next great project. 
+</p>
 </div>
+<!-- End Page Content -->
+<!-- Start Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script>
 	$(".dropdown-content").hide();
