@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 <style>
 
 /* the Body */
@@ -20,12 +21,41 @@ body {
 	padding: 24px 40px;
 	box-sizing: border-box;
 }
+
 @media screen and (max-width: 600px) {
 	.frame {
 		padding: 12px;
 	}
 }
 
+#lp-hero-text {
+  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8); 
+  font-size: 120px; 
+  vertical-align: middle;
+  font-family: 'Permanent Marker', cursive;
+}
+
+@media screen and (max-width: 600px) {
+	#lp-hero-text {
+		text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8); 
+    font-size: 64px; 
+    font-family: 'Permanent Marker', cursive;
+	}
+}
+
+#dc-hero-text {
+  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8); 
+  font-weight: lighter; 
+  font-size: 48px;
+}
+
+@media screen and (max-width: 600px) {
+	#dc-hero-text {
+		text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8); 
+    font-weight: lighter; 
+    font-size: 38px;
+	}
+}
 
 p {
 	font-size: 18px;
@@ -37,6 +67,15 @@ h4 {
 	line-height: 1.8em;
 	letter-spacing: 1px;
 	font-weight: normal;
+}
+
+@media screen and (max-width: 600px) {
+	h4 {
+		font-size: 18px;
+	  line-height: 1.8em;
+	  letter-spacing: 1px;
+	  font-weight: normal;
+	}
 }
 
 h3 {
@@ -58,7 +97,7 @@ h1 {
 .topnav {
   width: 100%;
   min-width: 320px;
-  background-color: rgba(00,00,00,0.8);
+  background-color: rgba(81, 32, 46, 0.0);
   position: fixed;
   top: 0;
   z-index: 999;
@@ -67,15 +106,16 @@ h1 {
 .topnav a {
   float: right;
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  text-shadow: 1px 1px 4px rgba(00,00,00, 0.8);
 }
 
 .topnav a:hover {
-  background-color: rgba(255,255,255,0.8);
-  color: #000;
+  background-color: rgba(255,255,255, 0.15);
+  color: #ffffff;
 }
 
 .topnav-mobile {
@@ -85,11 +125,26 @@ h1 {
 /* Hero Image, Text, & Button */
 .hero-image {
   background-image: linear-gradient(rgba(100, 0, 0, 0.3), rgba(100, 0, 0, 0.3)), url('images/skatepark-cropped-overlay.jpg');
-  height: 500px;
+  height: 100vh;
   position: relative;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero-logo {
+  width: 80%; 
+  max-width: 200px; 
+  height: auto; 
+  margin-bottom: -50px;
+}
+
+@media screen and (max-width: 600px) {
+   .hero-logo {
+    width: 80%; 
+    max-width: 200px; 
+    height: auto; 
+   }
 }
 
 .hero-text {
@@ -108,25 +163,29 @@ h1 {
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
+  margin: 18px auto;
   color: white;
-  background-color: rgba(00,00,00,0.8);
+  background-color: rgba(81, 32, 46, 0.8);
   text-align: center;
   cursor: pointer;
 }
 
 .hero-text button:hover {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255, 0.9);
   color: black;
 }
 
 /* Footer */
 .footer {
-	width: 100%;
-  min-width: 320px;
-  background-color: rgba(00,00,00,0.8);
-  position: fixed;
-  bottom: 0;
-  z-index: 999;
+	background-image: linear-gradient(rgba(100, 0, 0, 0.3), rgba(100, 0, 0, 0.3)), url('images/skatepark-cropped-overlay.jpg');
+  height: 100px;
+  padding: 20px;
+  position: relative;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  /* background-size: cover; */
 }
 
 /* On screens that are 600px wide or less */
@@ -139,11 +198,11 @@ h1 {
   .topnav-mobile {
   	display: inline-block;
 	text-align: left;
-	width: 30%;
+	width: auto;
 	min-width: 110px;
-	background-color: rgba(00,00,00,0.8);
+	background-color: rgba(81, 32, 46, 0.8);
 	color: white;
-	position: absolute;
+	position: fixed;
 	overflow: hidden;
 	top: 0;
 	border-radius: 0 0 24px 0;
@@ -168,7 +227,7 @@ h1 {
   	text-align: left;
   	padding: 20px 16px;
   	text-decoration: none;
-	border-top: 2px solid rgba(255, 255,255,0.5);
+	border-top: 2px solid rgba(81, 32, 46, 0.8);
   }
 }
 </style>
@@ -198,9 +257,9 @@ h1 {
 <!-- Hero Image and Text -->
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="text-shadow: 2px 2px 6px rgba(00,00,00,0.5); font-weight: bold;">Linepup Design Co.</h1>
-    <h4>Designs that don't bite</h4>
-    <button id="hero-button">Get in Touch</button>
+      <div id="lp-hero-text"><img class="hero-logo" src="images/lp-logo-circle-02.png">Linepup</div>
+      <div id="dc-hero-text">DESIGN CO.</div>
+    <button id="hero-button">LET'S GET COOKIN'</button>
   </div>
 </div>
 
@@ -209,13 +268,13 @@ h1 {
 <h4>
 Cool, clean layouts for print and digital interfaces. From nitty, gritty code, to elegant design solutions. My purpose is to make your brand simpler to understand, more attractive, and easier to access. Years of professional experience working with clients make Linepup Design Co. a contender in the graphic design arena. Let's discuss your next great project. 
 </h4>
-<hr style="background-color: rgba(100,0,0,0.5); height: 4px; width: 40%; border: 0;">
 </div>
 
 <!-- Footer Starts Here -->
 <footer class="footer">
 <p>
-Content Here
+<strong>Linepup Design Co.</strong><br>
+<a href="mailto:twoodcook@gmail.com" style="color: white !important;">twoodcook@gmail.com</a>
 </p>
 </footer>
 <!-- End Page Content -->
