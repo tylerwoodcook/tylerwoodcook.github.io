@@ -3,13 +3,13 @@
 <title>Linepup Design Co.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 <style>
 
 /* the Body */
 body {
-	font-family: "Raleway", Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	}
@@ -31,6 +31,7 @@ body {
 #lp-hero-text {
   text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8); 
   font-size: 120px; 
+  letter-spacing: 2px;
   vertical-align: middle;
   font-family: 'Permanent Marker', cursive;
 }
@@ -45,14 +46,14 @@ body {
 
 #dc-hero-text {
   text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8); 
-  font-weight: lighter; 
-  font-size: 48px;
+  font-weight: 300; 
+  font-size: 40px;
 }
 
 @media screen and (max-width: 600px) {
 	#dc-hero-text {
 		text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8); 
-    font-weight: lighter; 
+    font-weight: 300; 
     font-size: 38px;
 	}
 }
@@ -124,7 +125,7 @@ h1 {
 
 /* Hero Image, Text, & Button */
 .hero-image {
-  background-image: linear-gradient(rgba(100, 0, 0, 0.3), rgba(100, 0, 0, 0.3)), url('images/skatepark-cropped-overlay.jpg');
+  background-image: linear-gradient(rgba(100, 0, 0, 0.35), rgba(100, 0, 0, 0.35)), url('images/skatepark-cropped-overlay.jpg');
   height: 100vh;
   position: relative;
   background-position: top;
@@ -137,6 +138,7 @@ h1 {
   max-width: 200px; 
   height: auto; 
   margin-bottom: -50px;
+  margin-right: 24px;
 }
 
 @media screen and (max-width: 600px) {
@@ -144,6 +146,9 @@ h1 {
     width: 80%; 
     max-width: 200px; 
     height: auto; 
+    margin: 0 auto;
+    text-align: center;
+    display:table;
    }
 }
 
@@ -200,8 +205,8 @@ h1 {
 	text-align: left;
 	width: auto;
 	min-width: 110px;
-	background-color: rgba(81, 32, 46, 0.8);
-	color: white;
+	background-color: rgba(255,255,255, 0.9);
+	color: #000000;
 	position: fixed;
 	overflow: hidden;
 	top: 0;
@@ -213,7 +218,7 @@ h1 {
   	text-align: left;
   	float: none;
   	display: block;
-  	color: white;
+  	color: #000000;
 	overflow: hidden;
   	padding: 14px 16px;
   	text-decoration: none;
@@ -223,11 +228,11 @@ h1 {
   .dropdown-content a{
   	float: none;
   	display: block;
-  	color: white;
+  	color: #000000;
   	text-align: left;
   	padding: 20px 16px;
   	text-decoration: none;
-	border-top: 2px solid rgba(81, 32, 46, 0.8);
+	border-top: 2px solid rgba(00,00,00, 0.1);
   }
 }
 </style>
@@ -257,9 +262,9 @@ h1 {
 <!-- Hero Image and Text -->
 <div class="hero-image">
   <div class="hero-text">
-      <div id="lp-hero-text"><img class="hero-logo" src="images/lp-logo-circle-02.png">Linepup</div>
+      <div id="lp-hero-text"><img class="hero-logo" src="images/lp-logo-sticker.png">Linepup</div>
       <div id="dc-hero-text">DESIGN CO.</div>
-    <button id="hero-button">LET'S GET COOKIN'</button>
+    <!--<button id="hero-button">LET'S GET COOKIN'</button>-->
   </div>
 </div>
 
