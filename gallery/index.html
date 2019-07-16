@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="../styles/styles.css" rel="stylesheet">
+<link href="../styles/gallery.css" rel="stylesheet">
+<style>
+</style>
+<body>
+  <!-- Header -->
+  <header class="topnav">
+    <a href="#">Freebies</a>
+    <a href="https://creativemarket.com/LinepupDesignCo" target="_blank">Products</a>
+	<a href="/gallery/index.html">Gallery</a>
+	<a href="../index.html">Home</a>
+  </header>
+  
+  <header class="topnav-mobile">
+  <div class="dropdown-button">
+  MENU
+  </div>
+  <div class="dropdown-content">
+    <a href="#">Freebies</a>
+    <a href="https://creativemarket.com/LinepupDesignCo" target="_blank">Products</a>
+	<a href="/gallery/index.html">Gallery</a>
+	<a href="../index.html">Home</a>
+  </div>
+  </header>
+
+<!-- More Page Content -->
+    <div class="footer" style="height: 40px; background-position:top; text-align: left;">
+        ****Coming soon!****
+    </div>
+    <table class="gallery" id="gallery-large">
+        <tbody>
+            <tr>
+                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
+                </td>
+                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
+                </td>
+                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
+                </td>
+                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
+                </td>
+                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+<!-- Footer Starts Here -->
+<footer class="footer">
+<p>
+<strong>Linepup Design Co.</strong><br>
+<a href="mailto:twoodcook@gmail.com" style="color: white !important;">twoodcook@gmail.com</a>
+</p>
+</footer>
+<!-- End Page Content -->
+<!-- Start Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+	$(".dropdown-content").hide();
+	
+	$(".dropdown-button").click(function(){
+		$(".dropdown-content").toggle(300);
+	})
+	
+	$("#hero-button").mouseenter(function(){
+  		$("#hero-button").animate({
+    		width: '+=20px'
+		}, 200)
+	})
+
+	$("#hero-button").mouseleave(function(){
+  		$("#hero-button").animate({
+    		width: '-=20px'
+		}, 200)
+	})
+</script>
+</body>
+</html>
