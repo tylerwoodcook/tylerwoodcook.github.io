@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link href="styles/styles.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="scripts/mobile-dropdown.js"></script>
 	<!-- Start Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -64,26 +66,5 @@ Cool, clean layouts for print and digital interfaces. From nitty, gritty code, t
 </p>
 </footer>
 <!-- End Page Content -->
-<!-- Start Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script>
-	$(".dropdown-content").hide();
-	
-	$(".dropdown-button").click(function(){
-		$(".dropdown-content").toggle(300);
-	})
-	
-	$("#hero-button").mouseenter(function(){
-  		$("#hero-button").animate({
-    		width: '+=20px'
-		}, 200)
-	})
-
-	$("#hero-button").mouseleave(function(){
-  		$("#hero-button").animate({
-    		width: '-=20px'
-		}, 200)
-	})
-</script>
 </body>
 </html>
