@@ -1,10 +1,6 @@
-<script>
-  $(document).ready(function(){
-
-	$(".dropdown-content").hide();
-	
+$(document).ready(function(){
+$(".dropdown-content").hide();
 	$(".dropdown-button").click(function(){
-		$(".dropdown-content").toggle(300);
-	})
-  });
-</script>
+$(".dropdown-content").toggle(300);
+})
+});
