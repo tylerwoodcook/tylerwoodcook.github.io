@@ -7,6 +7,11 @@
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 <link href="../styles/styles.css" rel="stylesheet">
 <link href="../styles/gallery.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Fotorama from CDNJS, 19 KB, Documentation: https://fotorama.io/docs/4/ -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 <style>
 </style>
 <body>
@@ -31,29 +36,36 @@
   </header>
 
 <!-- More Page Content -->
-    <div class="footer" style="height: 40px; background-position:top; text-align: left;">
-        ****Coming soon!****
-    </div>
-    <table class="gallery" id="gallery-large">
-        <tbody>
-            <tr>
-                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
-                </td>
-                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
-                </td>
-                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
-                </td>
-            </tr>
-            <tr>
-                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
-                </td>
-                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
-                </td>
-                <td style="background-image:url(../images/gallery/2018-conference-display.png);">
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<div style="width: 100%; height: auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;">
+<!-- Gallery Starts | Fotorama jQuery Plugin-->
+<div style="margin: 0 auto;" 
+     class="fotorama"
+     data-width="100%"
+     data-ratio="16/10"
+     data-minwidth="320"
+     data-maxwidth="1200"
+     data-fit="cover"
+     data-loop="true"
+     data-keyboard="true"
+     data-click="false">
+    <div class="gallery-slide" style="background-image: url(../images/gallery/2018-conference-display.png);"><img src=""><a href="www.google.com">VIEW MORE</a></div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/rer-web-design-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/grow-through-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/heart-of-social-work-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/lead-program-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/newsletter-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/masking-tape-mega-pack-display.jpg);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/proudly-serving-display.jpg);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/rad-ralphs-display.jpg);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/scratch-business-cards-display.jpg);"><img src="">HTML HERE</div>
+</div>
+<!-- Gallery Ends -->
+</div>
 
 <!-- Footer Starts Here -->
 <footer class="footer">
@@ -64,7 +76,6 @@
 </footer>
 <!-- End Page Content -->
 <!-- Start Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script>
 	$(".dropdown-content").hide();
 	

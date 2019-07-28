@@ -230,39 +230,8 @@ h1 {
 
 /* Gallery Page Starts */
 
-.gallery {
-  width: 100%;
-}
-
-.gallery td {
-  background-size: cover;
+.gallery-slide {
+  height: 100%;
   background-position: center;
-  height: 500px;
-}
-
-.gallery img {
-  display: block;
-  width: 100%;
-}
-
-/* On screens that are 1080px wide or less */
-@media screen and (max-width: 1080px) {
-  #gallery-large {
-    display: none;
-  }
-
-  #gallery-small {
-    display: none;
-  }
-}
-
-/* On screens that are 600px wide or less */
-@media screen and (max-width: 600px) {
-  #gallery-large {
-    display: none;
-  }
-
-  #gallery-medium {
-    display: none;
-  }
+  background-size: cover;
 }
