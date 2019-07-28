@@ -230,8 +230,49 @@ h1 {
 
 /* Gallery Page Starts */
 
-.gallery-slide {
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+#gallery-container {
+  width: 100%;
+}
+
+#gallery-display {
+    margin: 80px auto 20px auto;
+    background-image: url(../images/gallery/2018-conference-display.png); 
+    width: 100%;
+    max-width: 1080px;
+    height: auto;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 3px 6px 0 rgba(00,00,00,0.2);
+}
+
+.btn-01 {
+  border-radius: 50%;
+  padding: 12px 12px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  color: #d3d3d3;
+  margin: 4px;
+}
+
+.btn-01:hover {
+  background-color: #dfdfdf;
+  cursor: pointer;
+  padding: 14px 14px;
+  margin: 2px;
+  color: #a3a3a3;
+  border: 1px solid #a3a3a3;
+  box-shadow: 0 2px 3px 0 rgba(00,00,00,0.15);
+}
+
+.btn-01:focus {
+  outline:none !important;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  padding: 14px 14px;
+  margin: 2px;
+  color: #a3a3a3;
+  border: 1px solid #a3a3a3;
+  box-shadow: 0 2px 3px 0 rgba(00,00,00,0.15);
 }

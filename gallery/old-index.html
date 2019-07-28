@@ -45,24 +45,47 @@
 	<a href="../index.html">Home</a>
   </div>
   </header>
+
 <!-- More Page Content -->
-<div id="gallery-container"> 
-    <div id="gallery-display">
-        <img src="../images/gallery/spacer.png" style="width: 100%;">
-    </div>
+<div style="width: 100%; height: auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;">
+<!-- Gallery Starts | Fotorama jQuery Plugin-->
+<div style="margin: 100px auto;" 
+     class="fotorama"
+     data-width="1200"
+     data-ratio="16/10"
+     data-minwidth="320"
+     data-maxwidth="1200"
+     data-fit="cover"
+     data-loop="true"
+     data-keyboard="true"
+     data-click="true">
+	<div class="gallery-slide" style="background-image: url(../images/gallery/2018-conference-display.png);" data-caption="Caption?">
+		<img src="">
+		<div class="fotorama" style="border: 1px solid blue; height: 96%; margin-top: 80px;">
+			<div class="fotorama__select" style="border: 1px solid black; height: auto; width: 100%; vertical-align: middle;">
+				<a href="http://www.google.com">NASW-PA Conference Programs</a>
+			</div>
+		</div>
+	</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/rer-web-design-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/grow-through-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/heart-of-social-work-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/lead-program-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/newsletter-display.png);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/masking-tape-mega-pack-display.jpg);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/proudly-serving-display.jpg);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/rad-ralphs-display.jpg);"><img src="">HTML HERE</div>
+    <div class="gallery-slide" style="background-image: url(../images/gallery/scratch-business-cards-display.jpg);"><img src="">HTML HERE</div>
 </div>
-<div style="width: 100%; max-width: 1080px; text-align: center; margin: 0 auto 80px auto;">
-<button class="btn-01" id="gallery-01">01</button>
-<button class="btn-01" id="gallery-02">02</button>
-<button class="btn-01" id="gallery-03">03</button>
-<button class="btn-01" id="gallery-04">04</button>
-<button class="btn-01" id="gallery-05">05</button>
-<button class="btn-01" id="gallery-06">06</button>
-<button class="btn-01" id="gallery-07">07</button>
-<button class="btn-01" id="gallery-08">08</button>
-<button class="btn-01" id="gallery-09">09</button>
-<button class="btn-01" id="gallery-10">10</button>
+<!-- Gallery Ends -->
 </div>
+<div style="text-align: center;">Use your arrow keys to navigate between projects</div>
+
 <!-- Footer Starts Here -->
 <footer class="footer">
 <p>
@@ -73,49 +96,6 @@
 <!-- End Page Content -->
 <!-- Start Scripts -->
 <script>
-    /* Gallery Buttons Script Begins */
-    
-    $("#gallery-01").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/2018-conference-display.png)");
-    })
-    
-    $("#gallery-02").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/rer-web-design-display.png)");
-    })
-
-    $("#gallery-03").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/heart-of-social-work-display.png)");
-    })
-
-    $("#gallery-04").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/lead-program-display.png)");
-    })
-
-    $("#gallery-05").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/masking-tape-mega-pack-display.jpg)");
-    })
-
-    $("#gallery-06").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/rer-web-design-display.png)");
-    })
-
-    $("#gallery-07").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/grow-through-display.png)");
-    })
-
-    $("#gallery-08").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/proudly-serving-display.jpg)");
-    })
-
-    $("#gallery-09").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/scratch-business-cards-display.jpg)");
-    })
-
-    $("#gallery-10").click(function(){
-        $("#gallery-display").css("background-image", "url(../images/gallery/rad-ralphs-display.jpg)");
-    })
-
-    /* Dropdown Menu Script Begins */
 	$(".dropdown-content").hide();
 	
 	$(".dropdown-button").click(function(){
