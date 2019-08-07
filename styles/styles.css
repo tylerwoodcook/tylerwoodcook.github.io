@@ -53,40 +53,37 @@ body {
     }
 }
 
+/* ------------------------------------------------------------- */
+/* Paragraphs and Headings */
+/* ------------------------------------------------------------- */
+
 p {
-    font-size: 18px;
-    line-height: 1.8em;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 h4 {
-    font-size: 24px;
-    line-height: 1.8em;
-    letter-spacing: 1px;
-    font-weight: normal;
-}
-
-@media screen and (max-width: 600px) {
-    h4 {
-        font-size: 18px;
-        line-height: 1.8em;
-        letter-spacing: 1px;
-        font-weight: normal;
-    }
+    font-size: 1.6em;
+    line-height: 1.5em;
+    margin: 0;
 }
 
 h3 {
-    font-size: 32px;
-    line-height: 1.8em;
+    font-size: 2.2em;
+    line-height: 1.7em;
+    margin: 0;
 }
 
 h2 {
-    font-size: 40px;
-    line-height: 1.8em;
+    font-size: 2.8em;
+    line-height: 1.5em;
+    margin: 0;
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 1.8em;
+    font-size: 4.2em;
+    line-height: 1.3em;
+    margin: 0;
 }
 
 /* ------------------------------------------------------------- */
@@ -182,9 +179,20 @@ h1 {
     color: black;
 }
 
-li {
-  margin: 20px 0;
+/* ------------------------------------------------------------- */
+/* Custom List Style */
+/* ------------------------------------------------------------- */
 
+.custom-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.custom-list li {
+  padding-left: 2.6em;
+  text-indent: -2.6em;
+  margin-bottom: 1.2em;
 }
 
 /* ------------------------------------------------------------- */
@@ -299,4 +307,16 @@ li {
     color: #a3a3a3;
     border: 2px solid #222;
     box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
+}
+
+/* ------------------------------------------------------------- */
+/* About Page Starts */
+/* ------------------------------------------------------------- */
+
+.hr-full-white {
+    border: 0;
+    width: 100%;
+    background-color: #666;
+    height: 4px;
+    margin: 30px 0;
 }
