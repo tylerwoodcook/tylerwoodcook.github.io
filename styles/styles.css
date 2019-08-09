@@ -292,31 +292,31 @@ h1 {
 .btn-01 {
     border-radius: 50%;
     padding: 12px 12px;
-    background-color: #666;
-    border: 2px solid #222;
-    color: #222;
+    background-color: #ddd;
+    border: 2px solid #999;
+    color: #999;
     font-weight: bold;
     margin: 4px;
 }
 
 .btn-01:hover {
-    background-color: #444;
+    background-color: #fff;
     cursor: pointer;
     padding: 14px 14px;
     margin: 2px;
-    color: #a3a3a3;
-    border: 2px solid #222;
+    color: #999;
+    border: 2px solid #999;
     box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
 }
 
 .btn-01:focus {
     outline: none !important;
-    background-color: #444;
+    background-color: #fff;
     cursor: pointer;
     padding: 14px 14px;
     margin: 2px;
-    color: #a3a3a3;
-    border: 2px solid #222;
+    color: #999;
+    border: 2px solid #999;
     box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
 }
 
