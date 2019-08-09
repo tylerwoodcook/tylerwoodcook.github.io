@@ -2,192 +2,257 @@
 /* Import Fonts */
 /* ------------------------------------------------------------- */
 
-/* 
-Fira Code (400, 700), 
-Rubik (400, 700),
-Permanent Marker,
-*/
-@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700|Permanent+Marker|Rubik:400,700&display=swap');
+/* --- FONTS: Fira Code (400, 700) | Rubik (400, 700) | Permanent Marker, --- */
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700|Permanent+Marker|Rubik:400,700&display=swap");
 
 /* ------------------------------------------------------------- */
-/* the Body */
+/* Body */
 /* ------------------------------------------------------------- */
 
 body {
-    font-family: 'Rubik', sans-serif;
-    color: #202020;
-    padding: 0;
-    margin: 0;
+  font-family: "Rubik", sans-serif;
+  color: #202020;
+  padding: 0;
+  margin: 0;
 }
 
 .frame {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 24px 40px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 40px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 600px) {
-    .frame {
-        padding: 12px;
-    }
+  .frame {
+    padding: 12px;
+  }
 }
 
 #lp-hero-text {
-    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-    font-size: 120px;
-    letter-spacing: 2px;
-    vertical-align: middle;
-    font-family: "Permanent Marker", cursive;
+  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+  font-size: 120px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  font-family: "Permanent Marker", cursive;
 }
 
 @media screen and (max-width: 600px) {
-    #lp-hero-text {
-        text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-        font-size: 64px;
-        font-family: "Permanent Marker", cursive;
-    }
+  #lp-hero-text {
+    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+    font-size: 64px;
+    font-family: "Permanent Marker", cursive;
+  }
 }
 
 #dc-hero-text {
-    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-    font-weight: 300;
-    font-size: 40px;
+  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+  font-weight: 300;
+  font-size: 40px;
 }
 
 @media screen and (max-width: 600px) {
-    #dc-hero-text {
-        text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-        font-weight: 300;
-        font-size: 38px;
-    }
+  #dc-hero-text {
+    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+    font-weight: 300;
+    font-size: 38px;
+  }
 }
 
 /* ------------------------------------------------------------- */
-/* Paragraphs and Headings */
+/* Paragraphs | Headings */
 /* ------------------------------------------------------------- */
 
 p {
-    font-size: 1em;
-    line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+li {
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 h4 {
-    font-size: 1.6em;
-    line-height: 1.5em;
-    margin: 0;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin: 0;
 }
 
 h3 {
-    font-size: 2.2em;
-    line-height: 1.7em;
-    margin: 0;
+  font-size: 2.2em;
+  line-height: 1.7em;
+  margin: 0;
 }
 
 h2 {
-    font-size: 2.8em;
-    line-height: 1.5em;
-    margin: 0;
+  font-size: 2.8em;
+  line-height: 1.5em;
+  margin: 0;
 }
 
 h1 {
-    font-size: 4.2em;
-    line-height: 1.3em;
-    margin: 0;
+  font-size: 4.2em;
+  line-height: 1.3em;
+  margin: 0;
 }
 
 /* ------------------------------------------------------------- */
-/* Desktop Nav Bar */
+/* Nav Bar - Desktop */
 /* ------------------------------------------------------------- */
 
 .topnav {
-    width: 100%;
-    min-width: 320px;
-    background-color: rgba(81, 32, 46, 0);
-    position: fixed;
-    top: 0;
-    z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 .topnav a {
-    float: right;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-shadow: 1px 1px 4px rgba(00, 00, 00, 0.8);
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
 }
 
 .topnav a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
+  color: #202020;
+  text-shadow: none;
+  box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
+}
+
+.topnav a:focus {
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 1);
+  color: #202020;
+  text-shadow: none;
+  box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
 }
 
 .topnav-mobile {
-    display: none;
+  display: none; /* .topnav-mobile Disabled on desktop */
 }
 
 /* ------------------------------------------------------------- */
-/* Hero Image, Text, & Button */
+/* Nav Bar - Mobile */
+/* ------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    display: none; /* .topnav Disabled on mobile */
+  }
+
+  .topnav-mobile {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    min-width: 110px;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    border-radius: 0 0 24px 0;
+    z-index: 999;
+  }
+
+  .dropdown-button {
+    text-align: left;
+    float: none;
+    display: block;
+    font-weight: 800;
+    overflow: hidden;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content a {
+    float: none;
+    display: block;
+    color: #202020;
+    text-align: left;
+    padding: 20px 16px;
+    text-decoration: none;
+    border-top: 1px solid #d3d3d3;
+  }
+}
+
+/* ------------------------------------------------------------- */
+/* Hero Section - Homepage */
 /* ------------------------------------------------------------- */
 
 .hero-image {
-    background-image: linear-gradient(rgba(100, 0, 0, 0.35), rgba(100, 0, 0, 0.35)),
-        url("../images/skatepark-cropped-overlay.jpg");
-    height: 100vh;
-    position: relative;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: linear-gradient(rgba(100, 0, 0, 0.35), rgba(100, 0, 0, 0.35)),
+    url("../images/skatepark-cropped-overlay.jpg");
+  height: 100vh;
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-logo {
-    width: 80%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: -50px;
-    margin-right: 24px;
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: -50px;
+  margin-right: 24px;
 }
 
 @media screen and (max-width: 600px) {
-    .hero-logo {
-        width: 80%;
-        max-width: 200px;
-        height: auto;
-        margin: 0 auto;
-        text-align: center;
-        display: table;
-    }
+  .hero-logo {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+  }
 }
 
 .hero-text {
-    text-align: center;
-    position: absolute;
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  text-align: center;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-.hero-text button {
-    border: none;
-    border-radius: 20px 0 20px 0;
-    outline: 0;
-    display: inline-block;
-    padding: 20px 40px;
-    margin: 40px auto;
-    color: white;
-    background-color: rgba(81, 32, 46, 0.8);
-    text-align: center;
-    cursor: pointer;
+.hero-button {
+  border: 1px solid #fff;
+  border-radius: 0 20px 0 20px;
+  display: inline-block;
+  padding: 20px 40px;
+  margin: 40px auto;
+  color: #fff;
+  background-color: rgba(81, 32, 46, 0);
+  text-align: center;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
 }
 
-.hero-text button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #202020;
+.hero-button:focus {
+  outline: none !important;
+  background-color: #fff;
+  color: #202020;
+  box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
+}
+
+.hero-button:hover {
+  background-color: #fff;
+  color: #202020;
+  box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
 }
 
 /* ------------------------------------------------------------- */
@@ -195,9 +260,9 @@ h1 {
 /* ------------------------------------------------------------- */
 
 .custom-list {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .custom-list li {
@@ -211,123 +276,91 @@ h1 {
 /* ------------------------------------------------------------- */
 
 .footer {
-    background-image: linear-gradient(rgba(100, 0, 0, 0.3), rgba(100, 0, 0, 0.3)),
-        url("../images/skatepark-cropped-overlay.jpg");
-    height: 100px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: white;
-    /* background-size: cover; */
-}
-
-@media screen and (max-width: 600px) {
-    .topnav {
-        display: none;
-    }
-
-    .topnav-mobile {
-        display: inline-block;
-        text-align: left;
-        width: auto;
-        min-width: 110px;
-        background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0 1px 8px 0 rgba(00, 00, 00, 0.6);
-        position: fixed;
-        overflow: hidden;
-        top: 0;
-        border-radius: 0 0 24px 0;
-        z-index: 999;
-    }
-
-    .dropdown-button {
-        text-align: left;
-        float: none;
-        display: block;
-        font-weight: 800;
-        overflow: hidden;
-        padding: 14px 16px;
-        text-decoration: none;
-        border: none;
-    }
-
-    .dropdown-content a {
-        float: none;
-        display: block;
-        color: #202020;
-        text-align: left;
-        padding: 20px 16px;
-        text-decoration: none;
-        border-top: 2px solid rgba(00, 00, 00, 0.1);
-    }
+  background-image: linear-gradient(rgba(100, 0, 0, 0.3), rgba(100, 0, 0, 0.3)),
+    url("../images/skatepark-cropped-overlay.jpg");
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  /* background-size: cover; */
 }
 
 /* ------------------------------------------------------------- */
-/* Gallery Page Starts */
+/* Gallery Page */
 /* ------------------------------------------------------------- */
 
 #gallery-container {
-    width: 100%;
-    background-color: rgba(00,00,00,0.0); /* transparent background */
+  width: 100%;
+  background-color: rgba(00, 00, 00, 0); /* transparent background */
 }
 
 #gallery-display {
-    margin: 80px auto 20px auto;
-    background-image: url(../images/gallery/2018-conference-display.jpg);
-    width: 100%;
-    max-width: 1080px;
-    height: auto;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
+  margin: 80px auto 20px auto;
+  background-image: url(../images/gallery/2018-conference-display.jpg);
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
 }
 
 .btn-01 {
-    border-radius: 50%;
-    padding: 12px 12px;
-    background-color: #a04057;
-    border: 2px solid #c14d63;
-    color: #c14d63;
-    font-weight: bold;
-    margin: 4px;
+  border-radius: 50%;
+  padding: 12px 12px;
+  background-color: #a04057;
+  border: 2px solid #c14d63;
+  color: #c14d63;
+  font-weight: bold;
+  margin: 4px;
 }
 
 .btn-01:hover {
-    background-color: #c14d63;
-    cursor: pointer;
-    padding: 14px 14px;
-    margin: 2px;
-    color: #a04057;
-    border: 2px solid #a04057;
-    box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
+  background-color: #c14d63;
+  cursor: pointer;
+  padding: 14px 14px;
+  margin: 2px;
+  color: #a04057;
+  border: 2px solid #a04057;
+  box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
 }
 
 .btn-01:focus {
-    outline: none !important;
-    background-color: #c14d63;
-    cursor: pointer;
-    padding: 14px 14px;
-    margin: 2px;
-    color: #a04057;
-    border: 2px solid #a04057;
-    box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
+  outline: none !important;
+  background-color: #c14d63;
+  cursor: pointer;
+  padding: 14px 14px;
+  margin: 2px;
+  color: #a04057;
+  border: 2px solid #a04057;
+  box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
 }
 
 /* ------------------------------------------------------------- */
-/* About Page Starts */
+/* About Page */
 /* ------------------------------------------------------------- */
 
 .hr-full-white {
-    border: 0;
-    width: 100%;
-    background-color: #fff;
-    height: 2px;
-    margin: 30px 0;
+  border: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .claims {
+    font-size: 2.6em;
+  }
+  .person-company {
+    font-size: 1.2em;
+  }
 }

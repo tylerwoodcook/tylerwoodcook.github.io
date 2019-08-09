@@ -1,156 +1,167 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Gallery</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Fonts -->
-        <!-- CSS Stylesheets -->
-        <link href="../styles/styles.css" rel="stylesheet" type="text/css" />
-        <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="/scripts/mobile-dropdown.js"></script>
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#9f00a7" />
-        <meta name="theme-color" content="#ffffff" />
-        <!-- Fotorama from CDNJS, 19 KB, Documentation: https://fotorama.io/docs/4/ -->
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
-            rel="stylesheet"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-    </head>
-    <body style="background-repeat: no-repeat; background: linear-gradient(339deg, rgba(160,64,87,1) 0%, rgba(193,77,99,1) 45%, rgba(193,111,79,1) 100%) fixed; margin: 0; padding: 0;">
-        <!-- Top Nav Desktop -->
-        <header class="topnav">
-            <a href="#">Freebies</a>
-            <a href="https://creativemarket.com/LinepupDesignCo" target="_blank">Products</a>
-            <a href="/gallery/index.html">Gallery</a>
-            <a href="../about/index.html">About</a>
-            <a href="../index.html">Home</a>
-        </header>
-        <!-- Top Nav Mobile -->
-        <header class="topnav-mobile">
-            <div class="dropdown-button">
-                MENU
-            </div>
-            <div class="dropdown-content">
-                <a href="../index.html">Home</a>
-                <a href="../about/index.html">About</a>
-                <a href="/gallery/index.html">Gallery</a>
-                <a href="https://creativemarket.com/LinepupDesignCo" target="_blank">Products</a>
-                <a href="#">Freebies</a>
-            </div>
-        </header>
-        <!-- End Header -->
-        <!-- More Page Content -->
-        <div id="gallery-container">
-            <div id="gallery-display">
-                <img src="../images/gallery/spacer.png" style="width: 100%;" />
-            </div>
-            <p style="padding: 4px 10px; color: #fff; text-align: center;" id="img-caption">Annual Conference Branding &amp; Collateral</p>
-        </div>
-        <div style="width: 100%; max-width: 1080px; text-align: center; margin: 0 auto 80px auto;">
-            <button class="btn-01" id="gallery-01">01</button>
-            <button class="btn-01" id="gallery-02">02</button>
-            <button class="btn-01" id="gallery-03">03</button>
-            <button class="btn-01" id="gallery-04">04</button>
-            <button class="btn-01" id="gallery-05">05</button>
-            <button class="btn-01" id="gallery-06">06</button>
-            <button class="btn-01" id="gallery-07">07</button>
-            <button class="btn-01" id="gallery-08">08</button>
-            <button class="btn-01" id="gallery-09">09</button>
-            <button class="btn-01" id="gallery-10">10</button>
-        </div>
-        <!-- End Page Content -->
-        <!-- Start Scripts -->
-        <script>
-            // Gallery Buttons Script Begins
+  <head>
+    <title>Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fonts -->
+    <!-- CSS Stylesheets -->
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css" />
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="/scripts/mobile-dropdown.js"></script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Fotorama from CDNJS, 19 KB, Documentation: https://fotorama.io/docs/4/ -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  </head>
+  <body
+    style="background-repeat: no-repeat; background: linear-gradient(339deg, rgba(160,64,87,1) 0%, rgba(193,77,99,1) 45%, rgba(193,111,79,1) 100%) fixed; margin: 0; padding: 0;"
+  >
+    <!-- Top Nav Desktop -->
+    <header class="topnav">
+      <a href="https://creativemarket.com/LinepupDesignCo" target="_blank">PRODUCTS</a>
+      <a href="/gallery/index.html">GALLERY</a>
+      <a href="../about/index.html">ABOUT</a>
+      <a href="../index.html">HOME</a>
+    </header>
+    <!-- Top Nav Mobile -->
+    <header class="topnav-mobile">
+      <div class="dropdown-button">
+        MENU
+      </div>
+      <div class="dropdown-content">
+        <a href="../index.html">HOME</a>
+        <a href="../about/index.html">ABOUT</a>
+        <a href="/gallery/index.html">GALLERY</a>
+        <a href="https://creativemarket.com/LinepupDesignCo" target="_blank">PRODUCTS</a>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- More Page Content -->
+    <div id="gallery-container">
+      <div id="gallery-display">
+        <img src="../images/gallery/spacer.png" style="width: 100%;" />
+      </div>
+      <p
+        style="padding: 4px 10px; color: #fff; text-align: center; min-height: 50px;"
+        id="img-caption"
+      >
+        Annual Conference Branding &amp; Collateral
+      </p>
+    </div>
+    <div style="width: 100%; max-width: 1080px; text-align: center; margin: 0 auto 80px auto;">
+      <button class="btn-01" id="gallery-01">01</button>
+      <button class="btn-01" id="gallery-02">02</button>
+      <button class="btn-01" id="gallery-03">03</button>
+      <button class="btn-01" id="gallery-04">04</button>
+      <button class="btn-01" id="gallery-05">05</button>
+      <button class="btn-01" id="gallery-06">06</button>
+      <button class="btn-01" id="gallery-07">07</button>
+      <button class="btn-01" id="gallery-08">08</button>
+      <button class="btn-01" id="gallery-09">09</button>
+      <button class="btn-01" id="gallery-10">10</button>
+    </div>
+    <!-- End Page Content -->
+    <!-- Start Scripts -->
+    <script>
+      // Gallery Buttons Script Begins
 
-            $("#gallery-01").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/2018-conference-display.jpg)"
-                );
-                $("#img-caption").html("Annual Conference Branding &amp; Collateral");
-            });
+      $("#gallery-01").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/2018-conference-display.jpg)"
+        );
+        $("#img-caption").html("Annual Conference Branding &amp; Collateral");
+      });
 
-            $("#gallery-02").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/rer-web-design-display.jpg)"
-                );
-                $("#img-caption").html("RER Solar Energy Full Website Redesign");
-            });
+      $("#gallery-02").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/rer-web-design-display.jpg)"
+        );
+        $("#img-caption").html("RER Solar Energy Full Website Redesign");
+      });
 
-            $("#gallery-03").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/heart-of-social-work-display.jpg)"
-                );
-                $("#img-caption").html("The heART of Social Work, Social Event Branding &amp; Logo");
-            });
+      $("#gallery-03").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/heart-of-social-work-display.jpg)"
+        );
+        $("#img-caption").html("The heART of Social Work, Social Event Branding &amp; Logo");
+      });
 
-            $("#gallery-04").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/lead-program-display.jpg)"
-                );
-                $("#img-caption").html("Annual Legislative Education &amp; Advocacy Day, Event Branding &amp; Collateral");
-            });
+      $("#gallery-04").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/lead-program-display.jpg)"
+        );
+        $("#img-caption").html(
+          "Annual Legislative Education &amp; Advocacy Day, Event Branding &amp; Collateral"
+        );
+      });
 
-            $("#gallery-05").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/masking-tape-mega-pack-display.jpg)"
-                );
-                $("#img-caption").html("Check Out My Design Assets &amp; Products on <a target='_blank' style='color: #888;' href='https://creativemarket.com/LinepupDesignCo'>Creative Market!</a>");
-            });
+      $("#gallery-05").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/masking-tape-mega-pack-display.jpg)"
+        );
+        $("#img-caption").html(
+          "Check Out My Design Assets &amp; Products on <a target='_blank' style='color: #fff;' href='https://creativemarket.com/LinepupDesignCo'>Creative Market!</a>"
+        );
+      });
 
-            $("#gallery-06").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/rer-web-design-display.jpg)"
-                );
-                $("#img-caption").html("RER Solar Energy Full Website Redesign");
-            });
+      $("#gallery-06").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/rer-web-design-display.jpg)"
+        );
+        $("#img-caption").html("RER Solar Energy Full Website Redesign");
+      });
 
-            $("#gallery-07").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/grow-through-display.jpg)"
-                );
-                $("#img-caption").html("Grow Through What You Go Through, Teeshirt Design");
-            });
+      $("#gallery-07").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/grow-through-display.jpg)"
+        );
+        $("#img-caption").html("Grow Through What You Go Through, Teeshirt Design");
+      });
 
-            $("#gallery-08").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/proudly-serving-display.jpg)"
-                );
-                $("#img-caption").html("Social Work, Proudly Serving Those in Need, Logo &amp; Apparel Design");
-            });
+      $("#gallery-08").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/proudly-serving-display.jpg)"
+        );
+        $("#img-caption").html(
+          "Social Work, Proudly Serving Those in Need, Logo &amp; Apparel Design"
+        );
+      });
 
-            $("#gallery-09").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/scratch-business-cards-display.jpg)"
-                );
-                $("#img-caption").html("Business Card Design for Scratch Studios");
-            });
+      $("#gallery-09").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/scratch-business-cards-display.jpg)"
+        );
+        $("#img-caption").html("Business Card Design for Scratch Studios");
+      });
 
-            $("#gallery-10").click(function() {
-                $("#gallery-display").css(
-                    "background-image",
-                    "url(../images/gallery/rad-ralphs-display.jpg)"
-                );
-                $("#img-caption").html("Rad Ralph's Surf and Skate Logo Design");
-            });
-        </script>
-    </body>
+      $("#gallery-10").click(function() {
+        $("#gallery-display").css(
+          "background-image",
+          "url(../images/gallery/rad-ralphs-display.jpg)"
+        );
+        $("#img-caption").html("Rad Ralph's Surf and Skate Logo Design");
+      });
+    </script>
+  </body>
 </html>
