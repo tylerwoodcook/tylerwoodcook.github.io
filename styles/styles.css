@@ -361,6 +361,7 @@ h1 {
   color: #202020;
   border-radius: 8px;
   padding: 60px;
+  box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
 }
 
 @media screen and (max-width: 600px) {
