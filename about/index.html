@@ -35,7 +35,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   </head>
   <body
-    style="background-repeat: no-repeat; background: linear-gradient(339deg, rgba(160,64,87,1) 0%, rgba(193,77,99,1) 45%, rgba(193,111,79,1) 100%) fixed; margin: 0; padding: 0;"
+    style="background-repeat: no-repeat; background: linear-gradient(80deg, #c14d63, #d1a659);margin: 0; padding: 0;"
   >
     <!-- Top Nav Desktop -->
     <header class="topnav">
@@ -100,8 +100,24 @@
         </ul>
       </div>
       </div>
-      <hr class="hr-full-white">
-        <a href="mailto:twoodcook@gmail.com" style="color: #fff; text-align: center;"><h4><strong>GET IN TOUCH</strong></h4></a>
+      <!-- Footer Begins -->
+      <div class="contact-box">
+      <div class="little-ty"></div>
+        <a href="mailto:twoodcook@gmail.com">
+          <h4><strong>EMAIL ME</strong></h4>
+        </a>
+      </div>
     </div>
+    <!-- Start Little Ty Script -->
+    <script>
+      $(document).ready(function(){
+	      $(".contact-box").mouseenter(function(){
+          $('.little-ty').css("background-image", "url('../images/ty-craz.png')");
+        })
+	      $(".contact-box").mouseleave(function(){
+          $('.little-ty').css("background-image", "url('../images/ty-norm.png')");
+        })
+      });
+    </script>
   </body>
 </html>
