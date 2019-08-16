@@ -310,6 +310,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 8px;
   box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
 }
 
@@ -361,7 +362,7 @@ h1 {
   color: #202020;
   border-radius: 8px;
   padding: 60px;
-  box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
+  box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
 }
 
 @media screen and (max-width: 600px) {
