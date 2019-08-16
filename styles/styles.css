@@ -114,11 +114,10 @@ h1 {
 .topnav a {
   float: right;
   display: block;
-  color: #ffffff;
+  color: #202020;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  text-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
 }
 
 .topnav a:hover {
