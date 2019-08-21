@@ -98,6 +98,13 @@ h1 {
   margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.8em;
+    line-height: 1.5em;
+  }
+}
+
 /* ------------------------------------------------------------- */
 /* Nav Bar - Desktop */
 /* ------------------------------------------------------------- */
@@ -107,7 +114,7 @@ h1 {
   position: fixed;
   top: 0;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #fff;
   box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
 }
 
@@ -152,7 +159,7 @@ h1 {
     display: inline-block;
     text-align: left;
     width: auto;
-    min-width: 110px;
+    min-width: 120px;
     background-color: #fff;
     box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
     position: fixed;
@@ -303,53 +310,153 @@ h1 {
 /* ------------------------------------------------------------- */
 
 #gallery-container {
-  width: 100%;
-  background-color: rgba(00, 00, 00, 0); /* transparent background */
-}
-
-#gallery-display {
-  margin: 80px auto 20px auto;
-  background-image: url(../images/gallery/2018-conference-display.jpg);
+  margin: 0 auto 20px auto;
   width: 100%;
   max-width: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gallery-display {
+  width: 300px;
+  margin: 20px;
   height: auto;
-  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
-}
-
-.btn-01 {
-  border-radius: 50%;
-  padding: 12px 12px;
-  background-color: #a04057;
-  border: 2px solid #c14d63;
-  color: #c14d63;
-  font-weight: bold;
-  margin: 4px;
-}
-
-.btn-01:hover {
-  background-color: #c14d63;
+  transition-duration: 0.05s;
   cursor: pointer;
-  padding: 14px 14px;
-  margin: 2px;
-  color: #a04057;
-  border: 2px solid #a04057;
-  box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
 }
 
-.btn-01:focus {
-  outline: none !important;
-  background-color: #c14d63;
+.gallery-display:hover {
+  width: 320px;
+  margin: 10px;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 9px 0 rgba(00, 00, 00, 0.4);
+  transition-duration: 0.05s;
+}
+
+.gallery-display img {
+  width: 100%;
+}
+
+#gallery-caption {
+  margin: 20px auto 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  min-height: 50px;
+}
+
+#gallery-lightbox-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-color: rgba(30, 10, 10, 0.88);
+}
+
+#gallery-lightbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  height: 700px;
+}
+
+#lightbox-image {
+  width: 100%;
+  max-width: 800px;
+  max-height: 800px;
+  border-radius: 10px;
+  box-shadow: 0 6px 9px 0 rgba(00, 00, 00, 0.4);
+}
+
+#lightbox-text {
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  color: #efd5d5;
+  padding: 20px;
+}
+
+#exit-lightbox {
+  font-size: 2em;
+  text-align: right;
+  line-height: 1;
+  margin: 0 0 20px auto;
+  border: 1px solid #efd5d5;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #efd5d5;
   cursor: pointer;
-  padding: 14px 14px;
-  margin: 2px;
-  color: #a04057;
-  border: 2px solid #a04057;
-  box-shadow: 0 2px 3px 0 rgba(00, 00, 00, 0.15);
+}
+
+/* Gallery Items 1-9 */
+
+.gallery-display:nth-of-type(1) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(2) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(3) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(4) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(5) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(6) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(7) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(8) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
+}
+
+.gallery-display:nth-of-type(9) {
+  content: url("../images/gallery/spacer.png");
+  background-image: url("../images/gallery/2018-conference-display.jpg");
 }
 
 /* ------------------------------------------------------------- */
@@ -369,6 +476,7 @@ h1 {
   color: #202020;
   border-radius: 8px;
   padding: 100px;
+  margin: 20px;
   box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
 }
 
@@ -377,31 +485,31 @@ h1 {
 }
 
 .contact-box {
-  vertical-align: middle; 
-  display: table; 
-  text-align: center; 
-  margin: 80px auto; 
+  vertical-align: middle;
+  display: table;
+  text-align: center;
+  margin: 80px auto;
   width: 100%;
-  max-width: 400px; 
+  max-width: 400px;
 }
 
 .contact-box a {
-  color: #fff; 
-  text-align: center; 
-  display: inline-block; 
-  vertical-align: middle; 
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
   text-decoration: none;
 }
 
 .little-ty {
-  width: 80px; 
-  height: 80px; 
-  display: inline-block; 
-  vertical-align: middle; 
-  text-align: center; 
-  margin: 0 40px 0 0; 
-  background-image: url('../images/ty-norm.png'); 
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 40px 0 0;
+  background-image: url("../images/ty-norm.png");
   background-size: contain;
 }
 
