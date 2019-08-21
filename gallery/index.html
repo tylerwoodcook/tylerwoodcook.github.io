@@ -184,7 +184,16 @@
         $('#lightbox-image').attr('src', '../images/gallery/newsletter-display.jpg');
         $('#gallery-lightbox-container').slideDown(200);
       }
-
+      
+      // Start Little Ty Script
+      $(document).ready(function(){
+	      $(".contact-box").mouseenter(function(){
+          $('.little-ty').css("background-image", "url('../images/ty-craz.png')");
+        })
+	      $(".contact-box").mouseleave(function(){
+          $('.little-ty').css("background-image", "url('../images/ty-norm.png')");
+        })
+      });
     </script>
   </body>
 </html>
