@@ -20,7 +20,7 @@
     <link href="../styles/styles.css" rel="stylesheet" type="text/css" />
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="/scripts/mobile-dropdown.js"></script>
+    <script src="../scripts/mobile-dropdown.js"></script>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -62,11 +62,13 @@
     <!-- More Page Content -->
     <div id="gallery-lightbox-container">
         <div id="gallery-lightbox">
-          <p id="exit-lightbox">&#xd7;</p>
-          <div style="width: 90vw; max-width: 800px; height: auto; margin: 20px;">
+          <div id="lightbox-image-container">
             <img id="lightbox-image" src="#">
+            <div>
+              <p id="lightbox-text">Desription of image</p>
+              <p id="exit-lightbox">&#x2716;</p>
+            </div>
           </div>
-          <p id="lightbox-text">Desription of image</p>
         </div>
     </div>
     <h1 style="color: #fff; margin: 120px auto 20px auto; width: 100%; max-width: 1080px; text-align: center;">Here's some of my work:</h1>
@@ -98,6 +100,14 @@
         <!-- Gallery Item #9 -->
         <div class="gallery-display" onclick="openLightbox9()">
         </div>
+      </div>
+    </div>
+    <!-- Start Footer -->
+    <div class="contact-box">
+      <div class="little-ty"></div>
+        <a href="mailto:twoodcook@gmail.com">
+          <h4><strong>EMAIL ME</strong></h4>
+        </a>
       </div>
     </div>
     <!-- End Page Content -->
