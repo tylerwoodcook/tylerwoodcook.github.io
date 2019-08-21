@@ -384,7 +384,7 @@ h1 {
 }
 
 #lightbox-image {
-  width: 100%;
+  width: auto;
   /* max-width: 800px; */
   max-height: 540px;
   border-radius: 10px;
