@@ -3,7 +3,7 @@
 /* --- FONTS: Fira Code (400, 700) | Rubik (400, 700) | Permanent Marker, --- */
 
 /* ------------------------------------------------------------- */
-/* Body */
+/* Custom Styles */
 /* ------------------------------------------------------------- */
 
 body {
@@ -27,34 +27,24 @@ body {
   }
 }
 
-#lp-hero-text {
-  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-  font-size: 120px;
-  letter-spacing: 2px;
-  vertical-align: middle;
-  font-family: "Permanent Marker", cursive;
+.custom-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-@media screen and (max-width: 600px) {
-  #lp-hero-text {
-    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-    font-size: 64px;
-    font-family: "Permanent Marker", cursive;
-  }
+.custom-list li {
+  padding-left: 2.6em;
+  text-indent: -2.6em;
+  margin-bottom: 2em;
 }
 
-#dc-hero-text {
-  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-  font-weight: 300;
-  font-size: 40px;
-}
-
-@media screen and (max-width: 600px) {
-  #dc-hero-text {
-    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
-    font-weight: 300;
-    font-size: 38px;
-  }
+.hr-full-white {
+  border: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  margin: 30px 0;
 }
 
 /* ------------------------------------------------------------- */
@@ -190,8 +180,38 @@ h1 {
 }
 
 /* ------------------------------------------------------------- */
-/* Hero Section - Homepage */
+/* Homepage
 /* ------------------------------------------------------------- */
+
+#lp-hero-text {
+  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+  font-size: 120px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  font-family: "Permanent Marker", cursive;
+}
+
+@media screen and (max-width: 600px) {
+  #lp-hero-text {
+    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+    font-size: 64px;
+    font-family: "Permanent Marker", cursive;
+  }
+}
+
+#dc-hero-text {
+  text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+  font-weight: 300;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  #dc-hero-text {
+    text-shadow: 2px 2px 6px rgba(81, 32, 46, 0.8);
+    font-weight: 300;
+    font-size: 38px;
+  }
+}
 
 .hero-image {
   background-image: linear-gradient(rgba(100, 0, 0, 0.35), rgba(100, 0, 0, 0.35)),
@@ -267,39 +287,65 @@ h1 {
 }
 
 /* ------------------------------------------------------------- */
-/* Custom List Style */
-/* ------------------------------------------------------------- */
-
-.custom-list {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.custom-list li {
-  padding-left: 2.6em;
-  text-indent: -2.6em;
-  margin-bottom: 2em;
-}
-
-/* ------------------------------------------------------------- */
 /* Footer */
 /* ------------------------------------------------------------- */
 
-.footer {
-  background-image: linear-gradient(rgba(100, 0, 0, 0.3), rgba(100, 0, 0, 0.3)),
-    url("../images/skatepark-cropped-overlay.jpg");
-  height: 100px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  background-position: bottom;
-  background-repeat: no-repeat;
+.contact-box {
+  vertical-align: middle;
+  display: table;
   text-align: center;
-  color: white;
-  /* background-size: cover; */
+  margin: 80px auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-box a {
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+}
+
+.little-ty {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 40px 0 0;
+  background-image: url("../images/ty-norm.png");
+  background-size: contain;
+}
+
+/* ------------------------------------------------------------- */
+/* About Page */
+/* ------------------------------------------------------------- */
+
+.material-box {
+  background-color: #fff;
+  color: #202020;
+  border-radius: 8px;
+  padding: 100px;
+  margin: 20px;
+  box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
+}
+
+.claims {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .claims {
+    font-size: 2.2em;
+  }
+  .person-company {
+    font-size: 1em;
+  }
+  .material-box {
+    padding: 40px 30px;
+  }
 }
 
 /* ------------------------------------------------------------- */
@@ -475,70 +521,4 @@ h1 {
 .gallery-display:nth-of-type(9) {
   content: url("../images/gallery/spacer.png");
   background-image: url("../images/gallery/newsletter-display.jpg");
-}
-
-/* ------------------------------------------------------------- */
-/* About Page */
-/* ------------------------------------------------------------- */
-
-.hr-full-white {
-  border: 0;
-  width: 100%;
-  background-color: #fff;
-  height: 2px;
-  margin: 30px 0;
-}
-
-.material-box {
-  background-color: #fff;
-  color: #202020;
-  border-radius: 8px;
-  padding: 100px;
-  margin: 20px;
-  box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
-}
-
-.claims {
-  margin-bottom: 40px;
-}
-
-.contact-box {
-  vertical-align: middle;
-  display: table;
-  text-align: center;
-  margin: 80px auto;
-  width: 100%;
-  max-width: 400px;
-}
-
-.contact-box a {
-  color: #fff;
-  text-align: center;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-}
-
-.little-ty {
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  margin: 0 40px 0 0;
-  background-image: url("../images/ty-norm.png");
-  background-size: contain;
-}
-
-@media screen and (max-width: 600px) {
-  .claims {
-    font-size: 2.2em;
-  }
-  .person-company {
-    font-size: 1em;
-  }
-  .material-box {
-    padding: 40px 30px;
-  }
 }
