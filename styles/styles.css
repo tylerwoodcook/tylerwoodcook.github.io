@@ -357,7 +357,7 @@ h1 {
 
 .gallery-container {
   margin: 0 auto 20px auto;
-  width: 47% 47%;
+  width: 100%;
   max-width: 1080px;
   display: flex;
   flex-direction: column;
