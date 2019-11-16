@@ -101,7 +101,7 @@ h1 {
   position: fixed;
   top: 0;
   z-index: 999;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   box-shadow: 0 4px 6px 0 rgba(00, 00, 00, 0.3);
 }
 
@@ -147,7 +147,7 @@ h1 {
     text-align: left;
     width: auto;
     min-width: 120px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.3);
     position: fixed;
     overflow: hidden;
