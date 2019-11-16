@@ -356,7 +356,7 @@ h1 {
 
 .gallery-container {
   margin: 0 auto 20px auto;
-  width: 100%;
+  width: 47% 47%;
   max-width: 1080px;
   display: flex;
   flex-direction: column;
@@ -409,6 +409,53 @@ h1 {
     width: 300px;
     height: 200px;
   }  
+}
+
+/* Gallery Items 1-9 */
+
+.gallery-display:nth-of-type(1) {
+  content: url("../images/gallery/2018-conference-display.jpg");
+  /* background-image: url("../images/gallery/2018-conference-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(2) {
+  content: url("../images/gallery/rto-website-screenshot.png");
+  /* background-image: url("../images/gallery/rer-web-design-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(3) {
+  content: url("../images/gallery/heart-of-social-work-display.jpg");
+  /* background-image: url("../images/gallery/heart-of-social-work-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(4) {
+  content: url("../images/gallery/lead-program-display.jpg");
+  /* background-image: url("../images/gallery/lead-program-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(5) {
+  content: url("../images/gallery/rer-web-design-display.jpg");
+  /* background-image: url("../images/gallery/masking-tape-mega-pack-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(6) {
+  content: url("../images/gallery/rad-ralphs-display.jpg");
+  /* background-image: url("../images/gallery/rad-ralphs-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(7) {
+  content: url("../images/gallery/grow-through-display.jpg");
+  /* background-image: url("../images/gallery/grow-through-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(8) {
+  content: url("../images/gallery/scratch-business-cards-display.jpg");
+  /* background-image: url("../images/gallery/scratch-business-cards-display.jpg"); */
+}
+
+.gallery-display:nth-of-type(9) {
+  content: url("../images/gallery/masking-tape-mega-pack-display.jpg");
+  /* background-image: url("../images/gallery/newsletter-display.jpg"); */
 }
 
 /* LIGHTBOX */
@@ -466,51 +513,4 @@ h1 {
 .exit-lightbox:hover {
   color: #ffffff;
   border: 1px solid #ffffff;
-}
-
-/* Gallery Items 1-9 */
-
-.gallery-display:nth-of-type(1) {
-  content: url("../images/gallery/2018-conference-display.jpg");
-  /* background-image: url("../images/gallery/2018-conference-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(2) {
-  content: url("../images/gallery/rto-website-screenshot.png");
-  /* background-image: url("../images/gallery/rer-web-design-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(3) {
-  content: url("../images/gallery/heart-of-social-work-display.jpg");
-  /* background-image: url("../images/gallery/heart-of-social-work-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(4) {
-  content: url("../images/gallery/lead-program-display.jpg");
-  /* background-image: url("../images/gallery/lead-program-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(5) {
-  content: url("../images/gallery/rer-web-design-display.jpg");
-  /* background-image: url("../images/gallery/masking-tape-mega-pack-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(6) {
-  content: url("../images/gallery/rad-ralphs-display.jpg");
-  /* background-image: url("../images/gallery/rad-ralphs-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(7) {
-  content: url("../images/gallery/grow-through-display.jpg");
-  /* background-image: url("../images/gallery/grow-through-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(8) {
-  content: url("../images/gallery/scratch-business-cards-display.jpg");
-  /* background-image: url("../images/gallery/scratch-business-cards-display.jpg"); */
-}
-
-.gallery-display:nth-of-type(9) {
-  content: url("../images/gallery/masking-tape-mega-pack-display.jpg");
-  /* background-image: url("../images/gallery/newsletter-display.jpg"); */
 }
