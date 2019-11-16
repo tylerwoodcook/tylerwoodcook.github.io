@@ -476,7 +476,7 @@ h1 {
 }
 
 .gallery-display:nth-of-type(2) {
-  content: url("../images/gallery/rer-web-design-display.jpg");
+  content: url("../images/gallery/rto-website-screenshot.png");
   /* background-image: url("../images/gallery/rer-web-design-display.jpg"); */
 }
 
@@ -491,7 +491,7 @@ h1 {
 }
 
 .gallery-display:nth-of-type(5) {
-  content: url("../images/gallery/masking-tape-mega-pack-display.jpg");
+  content: url("../images/gallery/rer-web-design-display.jpg");
   /* background-image: url("../images/gallery/masking-tape-mega-pack-display.jpg"); */
 }
 
@@ -511,6 +511,6 @@ h1 {
 }
 
 .gallery-display:nth-of-type(9) {
-  content: url("../images/gallery/newsletter-display.jpg");
+  content: url("../images/gallery/masking-tape-mega-pack-display.jpg");
   /* background-image: url("../images/gallery/newsletter-display.jpg"); */
 }
